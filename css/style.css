@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #e2e2e2;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+    width: 22px;
+}
+
+::-webkit-scrollbar-track{
+    
+    background-color: rgb(255 191 0);
+    
+}
+
+::-webkit-scrollbar-thumb{
+    
+    background-image: url(../img/logo-page.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.contenedor{
+    margin: auto;
+    width: 90vw;
+    /* height: 100vh; */
+    overflow: hidden;
+    
+    
+
+}
+
+.hamburguer{
+   display: none;
+    
+
+}
+
+.whats-icon{
+    top: 83%;
+    right: 5%;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    background-color:rgb(255, 191, 0) ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    
+}
+
+.whats-icon a{
+    color: rgb(9, 74, 171);
+  font-size: 65px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+
+}
+
+.whats-icon a:hover {
+    color: rgb(247, 247, 247);
+}
+
+
+.header{
+    height: 100vh;
+    width: 100vw;
+margin: auto;
+margin-bottom: 60px;
+}
+.head{
+    
+    background-image: url(../img/fondo-header.JPG);
+    opacity: .7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 87vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+margin: auto;
+text-align: center;
+
+}
+
+
+.head h1{
+    font-size: 60px;
+    margin-bottom: 59px;
+    
+
+}
+
+.head p{
+    display: block;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+
+.menu-navegacion{
+    height: 13vh;
+    width: 100vw;
+    background-color:rgb(255, 191, 0) ;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 10;
+    /* opacity: 1; */
+  
+   
+ 
+ 
+}
+
+
+
+.spread{
+    transform: translate(0%);
+}
+.img-nav{
+    height: 11vh;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.menu-navegacion-link{
+  
+    justify-content: space-between;
+    font-size: 30px;
+    color: #48e;
+    cursor: pointer;
+    text-decoration: none;
+        border-bottom: 2px solid #fff;
+        transition: .5s ease;
+}
+
+
+.menu-navegacion-link:hover{
+    color: rgb(19, 68, 142);
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+    transition: .5s;
+
+}
+
+
+/*  galeria */
+
+.products-h2{
+    font-weight: bold;
+font-size: 60px;
+letter-spacing: 50px;
+line-height: 1.4;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.galery{
+    padding: 30px 0;
+    background-color: #333;
+    width: 80vw;
+    /* height: 200px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 90px;
+}
+
+.foto-galery{
+    display: flex;
+
+    object-fit: cover;
+    cursor: pointer;
+    width: 30%;
+    height: 350px;
+    border: 4px solid rgb(245, 244, 244);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.close{
+position: absolute;
+top: 9%;
+right: 7%;
+width: 55px;
+height: 55px;
+cursor: pointer;
+color: #fff;
+
+}
+
+
+.imagen-light{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform  .2s ease-in-out;
+
+z-index: 1000;
+}
+
+.show{
+    transform: translate(0%);
+    
+}
+
+
+.agregar-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    width: 40%;
+    height:70%;
+    border-radius: 30px;
+    transition: transform .3s .2s;
+transform: scale(0);
+
+
+}
+
+
+.show-image{
+transform: scale(1);
+
+}
+
+/* qaulity */
+
+
+.quality{
+    
+    background-image: url(/img/fondo-header.jpg);
+    background-size:cover ;
+    height: 100vh;  
+    width: 90vw;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+margin-bottom: 80px;
+    
+
+
+}
+.why{
+    padding-top: 30px;
+color: rgb(22, 74, 153);
+font-size: 30px;
+letter-spacing: 3px;
+text-shadow: 1px 1px 1px white;
+
+
+}
+
+.why-us{
+    text-align: center;
+    font-size: 50px;
+color: rgb(255, 191, 0);
+text-shadow: 2px 1px 1px black;
+
+}
+
+
+.pepe {
+    
+    background-color: rgb(255, 191, 0);
+    min-height: 355px;
+    width: 20%;
+    top: 40%;
+    left: 70%;
+position: absolute;
+padding: 60px 10px;
+display: none;
+
+}
+.aeroready-container-div{
+
+    background-color: rgb(255, 191, 0);
+    padding: 60px 10px;
+    width: 20%;
+     top: 40%;
+    left: 8%;
+position: absolute;
+display: none;
+}
+
+.aeroready-h4{
+    text-shadow: 1px 1px 1px #fff;
+    text-align: center;
+    font-size: 25px;
+    /* text-transform:uppercase; */
+    margin-bottom: 10px;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 193, 8);
+    padding: 5px 0px;
+    justify-content: space-evenly;
+}
+.foto-footer{    
+}
+.footer img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.sobre-nosotros{
+    width: 40%;
+    
+}
+
+.sobre-nosotros p{
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+
+.sobre-nosotros h5{
+font-size: 25px;
+letter-spacing: 6px;
+text-align: center;
+margin-bottom: 15px;
+text-align: center;
+}
+
+
+.social-media{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px dashed rgb(33, 73, 132);
+    justify-content: space-evenly;
+    position: relative;
+
+
+    
+}
+
+
+
+.social-media a{
+    color: rgb(9, 74, 171);
+    width: 90px;
+    height: 90px;
+  font-size: 60px;
+  text-decoration: none;
+  align-items: center;
+    
+}
+
+.social-media a:hover {
+    color: rgb(247, 247, 247);
+}
+
+.tiktok{
+    position: absolute;
+    top: 31%;
+    left: 40%;
+}
+
+@media screen and (max-width:800px) {
+:root{
+    transition: 0s all;
+
+}
+    .hamburguer{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    display: block;
+    z-index: 10;
+    
+}
+
+.menu-navegacion{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgb(212,223,17);
+background: radial-gradient(circle, rgba(212,223,17,1) 0%, rgba(255,255,255,1) 11%, rgba(0,212,255,1) 100%);
+transform: translate(120%);
+transition: .5s all;
+
+}
+.spread{
+transform: translate(0%);
+transition: .5s all;
+
+
+}
+
+.head h1{
+    font-size: 55px;
+
+}
+
+.head p{
+    font-size: 35px;
+}
+
+.products-h2{
+    font-size: 40px;
+}
+
+.foto-galery{
+    width: 35%;
+    flex-direction: column;
+    display: flex;
+}
+
+.agregar-img{
+    width: 70%;
+    height: 60%;
+}
+}
